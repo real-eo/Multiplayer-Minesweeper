@@ -1,3 +1,9 @@
+INFO: 
+    "+": Task completed
+    "%": Task partially completed
+    "-": Task not completed
+
+
 TODO:
 + Stop timer when game is over
 + Highlight which buttons other players are currently hovering over
@@ -30,6 +36,7 @@ TODO:
 + Menu screen
 - Finish settings menu, the different option frames should be written in "options.py", and inherit from a shared class
 - Make all the different types of buttons. These buttons are located as a library in "buttons.py". Additionally, the "entry button" could present a pop-up screen, incase directly inputting text becomes difficult
+- Document `settings.ini` properly in `README.md` 
 
 
 BUGS:
