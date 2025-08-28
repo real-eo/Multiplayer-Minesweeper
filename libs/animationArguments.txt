@@ -1,0 +1,23 @@
+-[Base]------------------
+root                tkinter.Tk
+widget              tkinter.widget
+animationtype       str
+frameduration       int
+
+
+-[Sequence]--------------
+filelocation		str
+baseframename		str
+frames			    int
+frameseparator  	str
+filetype			str
+imagesize		    tuple(int, int)
+resizealgorithm	    int
+
+
+-[File]------------------
+file				str
+
+
+
+EXAMPLE: Animation(root, widget, animationtype=ANIMATION_SEQUENCE, frameduration=100, filelocation="images/forest/loading/", framename="loading", frames=23, imagesize=(100, 100), resizealgorithm=0)

@@ -1,0 +1,8 @@
+*.spec
+release.zip
+
+**/__pycache__/**
+release/**
+build/**
+dist/**
+minesweeper \[*\]/**

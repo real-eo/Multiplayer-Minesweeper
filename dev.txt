@@ -1,0 +1,58 @@
+TODO:
++ Stop timer when game is over
++ Highlight which buttons other players are currently hovering over
++ Add quick unconver
++ Ensure that the first tile is always a 0
++ Add support to restart the game when game is over
++ Make a game server
++ Move hosting to a server program
++ Add 2+ co-op support
++ Add support for midgame joining
++ Freely set the bomb % down to decimal,
++ Display who lost the game on "gameOver" screen
+- Add list of connected people to the side of the GUI, along coloring their names into their respective colors
++ Make an alogrithm that randomly assignes colors to new connections
+% Make so scroll wheel can be used to zoom in and out of the playfield
++ Add keybind customization, as well as keyboard button support
++ Send gamertag along with initial connection to server
++ Rewrite the server and client "reset code" structure  
+- Add gamechat
+- Add connected players list
++ Make client top level
+% Add more color themes to the game (5 so far)
+- Settings menu; move most of "settings.ini" into a menu in-game
++ Scale game when going into fullscreen
++ Center playfield when going into fullscreen
++ Add loading screen
+- Add support for animations on skin elements
+- Add support for custom skins
++ Add singleplayer
++ Menu screen
+- Finish settings menu, the different option frames should be written in "options.py", and inherit from a shared class
+- Make all the different types of buttons. These buttons are located as a library in "buttons.py". Additionally, the "entry button" could present a pop-up screen, incase directly inputting text becomes difficult
+
+
+BUGS:
++ "Quick reveal" misplaced flag bug
++ Stop tiles from chaning color after game is over, happens due to the cursor, both local and LAN
++ After local cursor overlapps another players cursor, the tile gets reset so that it doesn't show the initial player's cursor color, but the default color
++ Recoloring cursor bug
+- Packet loss-, desynced game bug
++ LAN player deselect square bug
++ Fix so that GridX & GridY aren't swapped
++ Fix so that the clock resets on restart without needing "first click" update
++ Fix so that an exception doesn't get raised when moving off a tile while holding down a mouse button
++ Player connections not getting closed and cleared before restart
++ Fix double connect when reconnecting after game reset
+- Fix so players can share cursor colors
+? Multiple "game over" pop-ups presenting at times (Bug stopped happening after killing buttons on restart??)
++ Fix so that when clicking a button while using a skin, the button doesn't become partially white
++ Fix so changing screen mode after restart doesn't mess up button textures
++ Fix so that restarting kills- or changes previous buttons, rather than just creating new ones
+% Loading screen not getting properly hidden after stopping (It only removes the animation sprite for now, so if i add more to the loading screen, that has to be cleared as well. Best would be to hide the entire loading screen frame)
+% Loading screen not being scaled correctly when in window mode (It sorta works)
++ Loading screen not stopping correctly upon restart
+- Rewrite menu-button textures to only take use of one button texture, instead of one for each button
+
+
+BUILD COMMAND: C:\Users\reale\AppData\Local\Programs\Python\Python311\Scripts\pyinstaller.exe -F -i="E:\VS Code\Python\Multiplayer Minesweeper\images\build assets\minesweeper.ico" client.py
