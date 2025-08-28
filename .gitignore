@@ -1,6 +1,5 @@
 *.spec
 release.zip
-settings.ini
 
 **/__pycache__/**
 release/**
